@@ -1,0 +1,346 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background-color: rgba(219, 211, 211, 0.351);
+}
+nav{
+    background-color:white;
+    box-shadow: 3px 3px 5px rgb(109, 109, 109);
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 30%;
+}
+nav ul{
+    width: 100%;
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+}
+nav li{
+    height: 50px;
+}
+nav a:hover{
+    background-color: rgb(198, 198, 200);
+}
+nav a{
+    text-decoration: none;
+    height: 100%;
+    padding: 0% 30px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #adadadbf;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(144, 144, 144);
+    display:none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.open{
+    width: 30px;
+}
+.close{
+    width: 30px;
+}
+.about-us{
+    display: flex;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    gap: 20px;
+}
+.left{
+    flex: 1;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.left h1{
+    font-family: "Sofia", sans-serif;
+    font-size: 50px;
+    color: rgba(67, 66, 66, 0.971);
+}
+.left p{
+    line-height: 25px;
+    color: rgba(16, 12, 12, 0.585);
+    line-height: 25px;
+}
+.right{
+    flex: 1;
+    background-color: rgba(219, 211, 211, 0.351);
+    box-shadow: -10px 0 10px rgb(101, 101, 101);
+}
+.right img{
+    width: 100%;
+}
+img{
+    width: 50%;
+}
+.section{
+    padding-top:30px;
+}
+.service-pro{
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns:5fr 5fr 5fr 5fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    box-shadow: 5px 10px 8px #8a8989a6;
+}
+.service-pro img{
+    box-shadow: 5px 10px 8px #757575;
+    border-radius: 10px;
+}
+.service-pro img{
+    width: 100%;
+}
+img{
+    width: 50%;
+}
+.service-info{
+    text-align: center;
+    padding: 0px 200px;
+}
+.service-info h2{
+    color: rgba(67, 66, 66, 0.971);
+    padding-bottom: 30px;
+}
+.service-info p{
+    color: rgba(16, 12, 12, 0.585);
+    line-height: 25px;
+    line-height: 25px;
+}
+.project-text{
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.project-text h2{
+    color: rgba(67, 66, 66, 0.971);
+}
+.project-text p{
+    line-height: 25px;
+    color: rgba(16, 12, 12, 0.585);
+    line-height: 25px;
+}
+.container{
+    padding: 0px 30px;
+    padding-bottom: 70px;
+    display:flex;
+    gap: 15px;    
+}
+.container img{
+    max-width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px #727272;
+}
+.container-init{
+    /* padding: 40px 30px; */
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 0% 30px;
+    /* gap: 10px; */
+}
+.container-init img{
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px #717171;
+    width: 100vh;
+}
+.contact-wrapper{
+    padding:50px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-wrapper p{
+    text-align: center;
+    color: rgba(16, 12, 12, 0.585);
+    line-height: 25px;
+}
+.contact-wrapper h1{
+    color: rgba(67, 66, 66, 0.971);
+}
+.contact{
+    display: flex;
+    padding: 30px 70px;
+    align-items: center;
+}
+fieldset{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0% 20px;
+    background-color:white;
+    box-shadow: 5px 10px 8px #727272;
+}
+legend{
+    display: flex;
+    justify-content: center;
+    color: rgba(78, 77, 77, 0.93);
+}
+.left{
+    flex: 1;
+}
+.left img{
+    width: 50px;
+}
+.left .phone, .address, .email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.phone p, .address p, .email p{
+    color: rgba(129, 127, 127, 0.869);
+}
+fieldset .right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    align-items: end;
+    background-color: none;
+}
+.contact .follow img{
+    width: 50px;
+    /* border: solid 1px; */
+    color: #cac8c8;
+    /* border-radius: 50% ; */            
+}
+.contact .follow h2{
+    color: rgba(95, 95, 95, 0.92);
+    padding-bottom:20px ;
+}
+footer p{
+    text-align: center;
+    color: rgba(129, 127, 127, 0.869);
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+
+@media(max-width:850px){
+    .hideOnMobile{
+        display: none;
+    }
+    .logo img{
+        width: 100px;
+    }
+    .about-us{
+        display: flex;
+        flex-direction: column;
+    }
+    .left h1{
+        font-size: 30px;
+    }
+    .left p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .about-us{
+        padding:0px 20px;
+    }
+    .right{
+        box-shadow: 10px 10px 10px rgb(101, 101, 101);
+    }
+    .service-info{
+            padding: 0px 30px;
+    }
+    .service-info h2{
+        font-size: 30px;
+    }
+    .service-info p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .service-pro{
+        display: grid;
+        grid-template-columns:5fr 5fr;
+        column-gap: 20px;
+        row-gap: 10px;
+        box-shadow: 5px 10px 8px #aeadad;
+    }
+    .project-text{
+        padding: 50px 30px;
+    }
+    .project-text h2{
+        font-size: 30px;
+    }
+    .project-text p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .container{
+        display: flex;
+        /* flex-direction: column; */
+        padding: 0% 10px;
+        gap: 5px;
+    }
+    .container img{
+        display: flex;
+        height: 100%;
+    }
+    .container-init{
+        padding-top: 70px;
+    }
+    .container-init img{
+        width: 100%;
+    }
+    .contact-wrapper h1{
+        font-size: 40px;
+    }
+    .contact-wrapper p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    fieldset{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media(min-width:850px){
+    .open{
+        display: none;
+    }
+}
