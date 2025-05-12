@@ -161,9 +161,13 @@ img{
 .container img{
     width: 100%;
     /* max-width: 400px; */
-    height: 400px;
+    /* height: 400px; */
+    height: 100%;
     border-radius: 10px;
     box-shadow: 5px 10px 8px #727272;
+}
+img{
+    width: 50%;
 }
 .container-init{
     /* padding: 40px 30px; */
@@ -174,6 +178,7 @@ img{
     padding: 0% 30px;
     /* gap: 10px; */
 }
+
 .container-init img{
     border-radius: 10px;
     box-shadow: 5px 10px 8px #717171;
