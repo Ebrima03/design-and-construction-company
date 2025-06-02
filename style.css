@@ -17,6 +17,7 @@ nav{
     display: flex;
     align-items: center;
     position: fixed;
+    width: 100%;
 }
 .logo img{
     width: 30%;
@@ -271,6 +272,7 @@ footer p{
     .about-us{
         display: flex;
         flex-direction: column;
+         padding:50px 20px;
     }
     .left h1{
         font-size: 30px;
@@ -278,9 +280,6 @@ footer p{
     .left p{
         font-size: 14px;
         line-height: 18px;
-    }
-    .about-us{
-        padding:0px 20px;
     }
     .right{
         box-shadow: 10px 10px 10px rgb(101, 101, 101);
